@@ -1,9 +1,11 @@
 pipeline {
     agent any
 
-    stage('Build') {
-        steps{
-            echo 'You are in a Building stage....'
+    stages{
+
+            stage('Build') {
+                steps{
+                     echo 'You are in a Building stage....'
         }
     }
 
@@ -19,5 +21,7 @@ pipeline {
         }
     }
 
+
+    }
 
 }
